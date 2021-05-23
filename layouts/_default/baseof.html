@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body>
+        <section class="section site-container">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-quarter is-hidden-mobile site-sidebar">
+                        <div class="sidebar-spacer"></div>
+                        {{- partial "sidebar.html" . -}}
+                    </div>
+                    <div class="column is-three-quarters">
+                        {{- partial "header.html" . -}}
+                        <br>
+                        {{- block "main" . }}{{- end }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{- partial "footer.html" . -}}
+
+        <script src="/js/nav.js"></script>
+        {{- block "scripts" . }}{{- end }}
+    </body>
+</html>

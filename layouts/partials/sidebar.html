@@ -1,0 +1,21 @@
+<div class="sidebar-image">
+    <img src="{{ default "/image.jpeg" .Site.Params.sidebar_image }}" />
+</div>
+
+<div class="has-text-centered sidebar-text">
+    <div class="header">
+        {{ .Site.Title }}
+    </div>
+
+    <div class="caption">
+        {{ .Site.Params.sidebar_text }}
+    </div>
+
+    <div class="socials">
+        {{ range .Site.Params.socials }}
+            <a href="{{ .url }}" target="_blank">
+                <i class="fab fa-{{ .icon }}"></i>
+            </a>
+        {{ end }}
+    </div>
+</div>

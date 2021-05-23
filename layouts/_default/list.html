@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+    {{ if (and (eq .Data.Plural "tags") (eq .Kind "taxonomy")) }}
+        {{/* Taxonomy list */}}
+
+        {{ range .Pages.ByPublishDate.Reverse }}
+            <a href="{{ .RelPermalink }}" class="button is-info is-light">
+                {{ .Title }}
+            </a>
+        {{ end }}
+
+    {{ else }}
+
+        {{/* Posts list */}}
+
+        {{ range .Pages.ByPublishDate.Reverse }}
+            {{ partial "post.html" . }}
+        {{ end }}
+
+    {{ end }}
+
+{{ end }}

@@ -1,0 +1,35 @@
+baseURL = "http://example.com/"
+languageCode = "en-gb"
+title = "Bulb"
+theme = "bulb"
+themesdir = "../.."
+
+[Params]
+# sidebar_image = "/image.jpeg"
+# sidebar_text = "A minimal Hugo theme"
+# footer_text = "A erat nam at lectus urna duis. Sed velit dignissim sodales ut eu sem."
+# google_analytics = ""
+
+
+# https://fontawesome.com/icons?d=gallery&p=2&s=brands&m=free
+[[Params.socials]]
+    icon = "github-square"
+    url = "http://example.com/"
+[[Params.socials]]
+    icon = "twitter-square"
+    url = "http://example.com/"
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3

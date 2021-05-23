@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section.site-container {
+    display: flex;
+    flex: 1;
+}
+
+section.site-container > .container > .columns {
+    height: 100%;
+}
+
+.column.site-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-spacer {
+    height: 240px;
+}
+
+.sidebar-image > img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.sidebar-text {
+    color: #363636;
+    line-height: 1.125;
+}
+
+.sidebar-text > .header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sidebar-text > .caption {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+.sidebar-text > .socials {
+    margin: 1rem;
+}
+
+.sidebar-text > .socials > a > .fab {
+    font-size: 2.5rem;
+    color: #363636;
+    margin: 0.5rem;
+}
+
+.navbar-brand {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand > h1 {
+    color: #363636;
+    line-height: 1.125;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section.post-metadata {
+    padding: 1rem 0rem;
+}
+
+.post {
+    margin: 2rem 0;
+}
+
+.post > .post-summary {
+    padding: 0.5rem;
+}
+
+.post > .meta {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.post > .meta > * {
+    padding: 0 0.5rem;
+}
+
+.post > .meta > .post-title {
+    flex-grow: 1;
+}
+
+.post > .meta > .post-title > a {
+    color: #363636;
+}
+
+.footer {
+    padding: 1rem;
+}

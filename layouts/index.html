@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <section class="section">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </section>
+    <section class="section">
+        <ul>
+            {{ range first 3 (
+                where .Site.RegularPages.ByPublishDate.Reverse "Type" "in" site.Params.mainSections
+            ) }}
+                {{ partial "post.html" . }}
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}

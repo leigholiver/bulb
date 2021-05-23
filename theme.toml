@@ -1,0 +1,12 @@
+name = "Bulb"
+license = "MIT"
+licenselink = "https://github.com/leigholiver/bulb/blob/master/LICENSE"
+description = "A minimal Hugo theme using Bulma"
+homepage = "https://github.com/leigholiver/bulb"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Leigh Oliver"
+  homepage = "https://leigholiver.com"

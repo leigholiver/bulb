@@ -1,0 +1,12 @@
+{{ with .Params.tags }}
+
+    {{ range . }}
+
+        {{ $href := print (absURL "tags/") (urlize .) }}
+        <span class="tag is-link is-light">
+            <a href="{{ $href }}">{{ . }}</a>
+        </span>
+
+    {{ end }}
+
+{{ end }}
