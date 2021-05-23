@@ -13,7 +13,7 @@
 
     <div class="socials">
         {{ range .Site.Params.socials }}
-            <a href="{{ .url }}" target="_blank">
+            <a href="{{ .url }}" target="_blank" rel="noopener">
                 <i class="fab fa-{{ .icon }}"></i>
             </a>
         {{ end }}
