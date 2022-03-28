@@ -29,6 +29,11 @@ section.site-container > .container > .columns {
 
 .sidebar-image > img {
     border-radius: 50%;
+}
+
+.sidebar-image-credit {
+    text-align: right;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
