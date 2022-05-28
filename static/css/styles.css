@@ -71,10 +71,6 @@ body, html {
     min-height: 100vh;
 }
 
-body {
-    display: flex;
-}
-
 .section {
     padding: 0 1.5rem;
 }
