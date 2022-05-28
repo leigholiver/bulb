@@ -5,10 +5,10 @@ theme = "bulb"
 themesdir = "../.."
 
 [Params]
-# sidebar_image = "/image.jpeg"
-# sidebar_text = "A minimal Hugo theme"
-# footer_text = "A erat nam at lectus urna duis. Sed velit dignissim sodales ut eu sem."
-# google_analytics = ""
+sidebar_image = "/image.jpeg"
+sidebar_text = "A minimal Hugo theme"
+sidebar_image_credit = "Image Credit"
+google_analytics = ""
 
 
 # https://fontawesome.com/icons?d=gallery&p=2&s=brands&m=free
@@ -33,3 +33,18 @@ themesdir = "../.."
     name = "Tags"
     url = "/tags/"
     weight = 3
+
+
+[Params.theme.light]
+text = ""
+bg = ""
+bg_alt = ""
+interactive = ""
+focus = ""
+
+[Params.theme.dark]
+text = ""
+bg = ""
+bg_alt = ""
+interactive = ""
+focus = ""

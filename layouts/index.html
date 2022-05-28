@@ -4,13 +4,12 @@
             {{ .Content }}
         </div>
     </section>
-    <section class="section">
-        <ul>
-            {{ range first 3 (
-                where .Site.RegularPages.ByPublishDate.Reverse "Type" "in" site.Params.mainSections
-            ) }}
-                {{ partial "post.html" . }}
-            {{ end }}
-        </ul>
+    <section class="section content homepage-posts-list">
+        <h3>Recent Posts</h3>
+        {{ range first 3 (
+            where .Site.RegularPages.ByPublishDate.Reverse "Type" "in" site.Params.mainSections
+        ) }}
+            {{ partial "post.html" . }}
+        {{ end }}
     </section>
 {{ end }}

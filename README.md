@@ -1,15 +1,17 @@
 # Bulb
-
 A minimal Hugo theme using [Bulma](https://bulma.io/)
-
-![Screenshot](screenshot.png)
 
 ## Table of Contents
 
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
+
+## Screenshots
+![Screenshot](images/light.png)
+![Screenshot](images/dark.png)
 
 ## Installation
 
@@ -34,7 +36,6 @@ General configuration is in the `[Params]` field:
 | ---------------- | ----------- | -------- | ------- |
 | `sidebar_image`    | The URL of the image to use in the sidebar | No | `/image.jpeg` |
 | `sidebar_text`     | The text to use in the sidebar | No | `""`
-| `footer_text`      | The text to use in the footer | No | `""`
 | `google_analytics` | Google Analytics ID | No | `""`
 
 

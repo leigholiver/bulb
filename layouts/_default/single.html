@@ -1,14 +1,13 @@
 {{ define "main" }}
 
-<section class="section">
-    <h1>{{ .Title }}</h1>
-    <div class="columns">
-        <div class="column">
-            {{ partial "tags.html" . }}
-        </div>
-        <div class="column has-text-right">
-            {{ .PublishDate.Format "Jan 2, 2006" }}
-        </div>
+<section class="section content">
+    <div class="meta content">
+        <h1>{{ .Title }}</h1>
+        <em>{{ .PublishDate.Format "Jan 2, 2006" }}</em>
+    </div>
+
+    <div class="tags">
+        {{ partial "tags.html" . }}
     </div>
 
     <div class="content">

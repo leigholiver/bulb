@@ -3,14 +3,9 @@
     <div class="sidebar-image-credit">{{ .Site.Params.sidebar_image_credit }}</div>
 </div>
 
-<div class="has-text-centered sidebar-text">
-    <div class="header">
-        {{ .Site.Title }}
-    </div>
-
-    <div class="caption">
-        {{ .Site.Params.sidebar_text }}
-    </div>
+<div class="has-text-centered sidebar-text content">
+    <h1>{{ .Site.Title }}</h1>
+    <h4>{{ .Site.Params.sidebar_text }}</h4>
 
     <div class="socials">
         {{ range .Site.Params.socials }}

@@ -1,16 +1,14 @@
 <div class="post">
 
-    <div class="meta">
-        <div class="has-text-weight-bold is-size-4 post-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </div>
-
-        <div>{{ partial "tags.html" . }}</div>
-        <div>{{ .PublishDate.Format "Jan 2, 2006" }}</div>
-
+    <div class="meta content">
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <em>{{ .PublishDate.Format "Jan 2, 2006" }}</em>
+    </div>
+    <div class="tags">
+        {{ partial "tags.html" . }}
     </div>
 
-    <div class="has-text-weight-light is-size-6 post-summary">
+    <div class="has-text-weight-light is-size-6 summary">
         {{ .Summary }}
     </div>
 

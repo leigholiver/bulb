@@ -25,6 +25,24 @@
 
     <link rel="stylesheet" href="/css/styles.css">
 
+    <style>
+        :root {
+            /* Light theme */
+            --c-light-text: {{ .Site.Params.theme.light.text | default "#333" }};
+            --c-light-background: {{ .Site.Params.theme.light.bg | default "#fff" }};
+            --c-light-background-alt: {{ .Site.Params.theme.light.bg_alt | default "#eee" }};
+            --c-light-interactive: {{ .Site.Params.theme.light.interactive | default "#485fc7" }};
+            --c-light-focus: {{ .Site.Params.theme.light.focus | default "#444" }};
+
+            /* Dark theme */
+            --c-dark-text: {{ .Site.Params.theme.dark.text | default "#fff" }};
+            --c-dark-background: {{ .Site.Params.theme.dark.bg | default "#333" }};
+            --c-dark-background-alt: {{ .Site.Params.theme.dark.bg_alt | default "#444" }};
+            --c-dark-interactive: {{ .Site.Params.theme.dark.interactive | default "#7aacff" }};
+            --c-dark-focus: {{ .Site.Params.theme.dark.focus | default "#eee" }};
+        }
+    </style>
+
     <meta property="og:title" content="{{ .Title }}">
 
     <meta name="description" content="Page description">

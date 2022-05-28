@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <body>
+        <input id="dark-mode" class="dark-mode-checkbox" type="checkbox">
         <section class="section site-container">
             <div class="container">
                 {{- partial "header.html" . -}}
@@ -16,9 +17,9 @@
                 </div>
             </div>
         </section>
-        {{- partial "footer.html" . -}}
 
         <script src="/js/nav.js"></script>
+        <script src="/js/dark-mode.js"></script>
         {{- block "scripts" . }}{{- end }}
     </body>
 </html>
