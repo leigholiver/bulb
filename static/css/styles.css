@@ -78,6 +78,7 @@ body, html {
 section.site-container {
     flex: 1;
     padding-bottom: 5rem;
+    min-height: 100vh;
 }
 
 .column.site-sidebar {
