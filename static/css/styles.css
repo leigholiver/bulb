@@ -8,6 +8,22 @@ body {
     flex-direction: column;
 }
 
+h1 {
+    color: #363636;
+    line-height: 1.125;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.section {
+    padding: 0 1.5rem;
+}
+
 section.site-container {
     display: flex;
     flex: 1;
@@ -24,7 +40,11 @@ section.site-container > .container > .columns {
 }
 
 .sidebar-spacer {
-    height: 240px;
+    height: 3rem;
+}
+
+.sidebar-image {
+    max-width: 15rem;
 }
 
 .sidebar-image > img {
@@ -64,16 +84,13 @@ section.site-container > .container > .columns {
     margin: 0.5rem;
 }
 
+.navbar {
+    padding: 1rem;
+}
+
 .navbar-brand {
     align-items: center;
     justify-content: center;
-}
-
-.navbar-brand > h1 {
-    color: #363636;
-    line-height: 1.125;
-    font-size: 2rem;
-    font-weight: 600;
 }
 
 section.post-metadata {
@@ -108,4 +125,8 @@ section.post-metadata {
 
 .footer {
     padding: 1rem;
+}
+
+.button {
+    margin: 0.5rem;
 }

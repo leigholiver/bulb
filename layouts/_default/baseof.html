@@ -4,14 +4,13 @@
     <body>
         <section class="section site-container">
             <div class="container">
+                {{- partial "header.html" . -}}
                 <div class="columns">
-                    <div class="column is-one-quarter is-hidden-mobile site-sidebar">
-                        <div class="sidebar-spacer"></div>
+                    <div class="column is-one-quarter site-sidebar">
+                        <div class="sidebar-spacer is-hidden-mobile"></div>
                         {{- partial "sidebar.html" . -}}
                     </div>
                     <div class="column is-three-quarters">
-                        {{- partial "header.html" . -}}
-                        <br>
                         {{- block "main" . }}{{- end }}
                     </div>
                 </div>
